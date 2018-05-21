@@ -1,0 +1,10 @@
+.counter {
+  &__number {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  &__button {
+    margin-left: 20px;
+    border: 1px solid #ccc;
+  }
+}
