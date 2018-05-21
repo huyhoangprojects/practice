@@ -1,3 +1,3 @@
-# React - Webpack
+# Practice
 
 npm run start
