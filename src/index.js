@@ -1,11 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import TodoApp from './components/Todo/TodoApp'
+import { createStore } from 'redux';
+import {Provider} from 'react-redux';
+import counter from "./reducers/counterReducer";
+import Counter from './containers/Counter';
 
-const root = document.getElementById("root");
+const store = createStore(counter);
+const rootEl = document.getElementById("root");
 
 ReactDOM.render(
-  <TodoApp/>,
-  root
+  <Provider store={store}>
+    <Counter />
+  </Provider>,
+  rootEl
 );
