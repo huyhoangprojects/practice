@@ -1,0 +1,20 @@
+.board {
+  margin: 0 0 1px 1px;
+  &__row {
+    &:before,
+    &:after {
+      display: table;
+      content: "";
+    }
+
+    &:after {
+      clear: both;
+    }
+
+    .square {
+      display: block;
+      float: left;
+      margin: 0 0 -1px -1px;
+    }
+  }
+}

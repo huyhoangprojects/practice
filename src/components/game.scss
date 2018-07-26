@@ -1,0 +1,20 @@
+.game{
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  &__board {
+    float: left;
+  }
+
+  &__info {
+    float: left;
+    margin: 0 0 0 50px;
+  }
+}

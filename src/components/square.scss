@@ -1,0 +1,18 @@
+.square {
+  height: 34px;
+  width: 34px;
+  border: 1px solid #000;
+  outline: none;
+  line-height: 32px;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+
+  &[disabled] {
+    cursor: default;
+    pointer-events: none;
+  }
+}
